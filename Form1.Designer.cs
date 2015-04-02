@@ -31,7 +31,6 @@
             this.mainTextBox = new System.Windows.Forms.RichTextBox();
             this.fdButton = new System.Windows.Forms.Button();
             this.fdComboBox = new System.Windows.Forms.ComboBox();
-            this.mainLabel = new System.Windows.Forms.Label();
             this.fdLabel = new System.Windows.Forms.Label();
             this.mpLabel = new System.Windows.Forms.Label();
             this.mpUserComboBox = new System.Windows.Forms.ComboBox();
@@ -41,6 +40,7 @@
             this.mpButton = new System.Windows.Forms.Button();
             this.mpBlockedComboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.titleLabel = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // mainTextBox
@@ -72,16 +72,6 @@
             this.fdComboBox.Name = "fdComboBox";
             this.fdComboBox.Size = new System.Drawing.Size(121, 21);
             this.fdComboBox.TabIndex = 3;
-            // 
-            // mainLabel
-            // 
-            this.mainLabel.AutoSize = true;
-            this.mainLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainLabel.Location = new System.Drawing.Point(5, 9);
-            this.mainLabel.Name = "mainLabel";
-            this.mainLabel.Size = new System.Drawing.Size(281, 37);
-            this.mainLabel.TabIndex = 4;
-            this.mainLabel.Text = "Frame Punish V2";
             // 
             // fdLabel
             // 
@@ -166,11 +156,26 @@
             this.label3.TabIndex = 13;
             this.label3.Text = "Opponent\'s Blocked Move";
             // 
+            // titleLabel
+            // 
+            this.titleLabel.AutoSize = true;
+            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.LinkColor = System.Drawing.Color.Black;
+            this.titleLabel.Location = new System.Drawing.Point(29, 12);
+            this.titleLabel.Name = "titleLabel";
+            this.titleLabel.Size = new System.Drawing.Size(229, 37);
+            this.titleLabel.TabIndex = 14;
+            this.titleLabel.TabStop = true;
+            this.titleLabel.Text = "Frame Punish";
+            this.titleLabel.VisitedLinkColor = System.Drawing.Color.Black;
+            this.titleLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.titleLabel_LinkClicked);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(638, 457);
+            this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.mpBlockedComboBox);
             this.Controls.Add(this.mpButton);
@@ -180,7 +185,6 @@
             this.Controls.Add(this.mpUserComboBox);
             this.Controls.Add(this.mpLabel);
             this.Controls.Add(this.fdLabel);
-            this.Controls.Add(this.mainLabel);
             this.Controls.Add(this.fdComboBox);
             this.Controls.Add(this.fdButton);
             this.Controls.Add(this.mainTextBox);
@@ -196,7 +200,6 @@
         private System.Windows.Forms.RichTextBox mainTextBox;
         private System.Windows.Forms.Button fdButton;
         private System.Windows.Forms.ComboBox fdComboBox;
-        private System.Windows.Forms.Label mainLabel;
         private System.Windows.Forms.Label fdLabel;
         private System.Windows.Forms.Label mpLabel;
         private System.Windows.Forms.ComboBox mpUserComboBox;
@@ -206,6 +209,7 @@
         private System.Windows.Forms.Button mpButton;
         private System.Windows.Forms.ComboBox mpBlockedComboBox;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.LinkLabel titleLabel;
     }
 }
 

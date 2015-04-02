@@ -85,6 +85,16 @@ namespace FramePunishV2
             {
                 mainTextBox.AppendText(punish + "\n");
             }
+        }
+
+        /// <summary>
+        /// Application info shown in message box
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void titleLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            MessageBox.Show("Created by Alvin Wang 2015");
         }       
     }
 }
