@@ -1,0 +1,34 @@
+﻿cl lp,4,3,11,-3,0
+cl mp,5,3,14,-2,4
+cl hp,4,3,20,-4,0
+cl lk,5,2,9,0,3
+cl mk,7,2,16,-4,-1
+cl hk,6,6,16,-4,0
+st lp,5,2,6,3,6
+st mp,5,6,11,-3,0
+st hp,12,3,17,-2,2
+st lk,5,3,8,0,3
+st mk,8,3,15,-4,-1
+st hk,13,3,18,-3,1
+cr lp,5,2,6,3,6
+cr mp,7,3,10,1,4
+cr hp,8,2,22,-6,0
+cr lk,5,3,7,1,4
+cr mk,8,5,13,-4,-1
+cr hk,11,3,25,-10,0
+f mk,7,2,16,0,3
+cod lp,14,3,25,-3,2
+cod mp,16,3,25,-3,2 
+cod hp,17,3,25,-3,2 
+cod ex,13,3,25,-3,2
+wheel kick lk,20,7,21,-10,-5
+wheel kick mk,24,7,22,-11,-6
+wheel kick hk,27,7,23,-12,-7
+wheel kick ex,17,7,21,-6,0
+tornado throw lp,5,2,51,0,0
+tornado throw mp,5,2,45,0,0
+tornado throw hp,5,2,39,0,0
+tornado throw ex,5,2,54,0,0
+super any p,6,4,41,-32,0
+ultra 1,14,2,46,-30,0
+ultra 2,10,6,72,0,0

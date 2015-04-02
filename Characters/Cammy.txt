@@ -1,0 +1,32 @@
+﻿cl lp,3,2,5,4,7
+cl mp,4,4,13,1,6
+cl hp,4,4,11,2,6
+cl lk,4,2,8,1,4
+cl mk,4,3,17,-6,-3
+cl hk,9,5,24,-11,-7
+st lp,3,3,5,3,6
+st mp,7,4,14,-4,-1
+st hp,6,3,19,-4,1
+st lk,4,3,6,2,5
+st mk,7,2,13,-1,2
+st hk,8,2,22,-6,-2
+cr lp,3,2,6,3,6
+cr mp,5,4,7,3,6
+cr hp,6,4,12,2,6
+cr lk,4,3,9,-1,2
+cr mk,6,4,12,-2,1
+cr hk,7,2,24,-8,0
+cannon spike lk,5,21,12,-30,0
+cannon spike mk,5,26,12,-30,0
+cannon spike hk,5,31,12,-30,0
+cannon spike ex,5,26,12,-30,0
+spiral arrow lk,7,19,15,-17,0
+spiral arrow mk,7,19,15,-17,0
+spiral arrow hk,7,7,15,-15,0
+spiral arrow ex,7,7,15,-10,0
+spin knuckle lp,35,24,9,4,0
+spin knuckle mp,33,24,10,3,0
+spin knuckle hp,36,24,10,3,0
+spin knuckle ex,33,24,10,3,0
+super,6,32,0,-35,0
+ultra 1,10,32,0,-35,0

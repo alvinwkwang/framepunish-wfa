@@ -1,0 +1,36 @@
+﻿cl lp,4,3,5,3,6
+cl mp,5,5,15,-4,6
+cl hp,8,4,15,-1,4
+cl lk,5,3,7,1,4
+cl mk,5,6,9,-1,5
+cl hk,7,3,21,-6,-2
+st lp,3,3,6,2,5
+st mp,7,4,13,-3,0
+st hp,8,3,14,1,5
+st lk,5,3,8,0,3
+st mk,8,4,13,-3,0
+st hk,9,8,17,-3,1
+cr lp,3,3,6,2,6
+cr mp,5,2,11,1,4
+cr hp,9,3,16,-1,4
+cr lk,4,2,7,2,5
+cr mk,6,2,14,-2,1
+cr hk,9,2,21,-5,0
+f mp,23,4,13,-2,3
+jag kick lk,20,6,21,-3,-2
+jag kick mk,21,7,20,-3,-2
+jag kick hk,22,8,20,-4,-2
+jag kick ex,20,6,22,-2,0
+rising jag lk,4,2,30,-13,0
+rising jag mk,5,2,35,-19,0
+rising jag hk,5,2,35,-23,0
+rising jag ex,5,4,34,-33,0
+jag tooth lk,12,4,20,1,-4
+jag tooth mk,13,5,17,-1,3
+jag tooth hk,14,7,18,0,-2
+jag tooth ex,7,7,20,-5,0
+super,8,3,40,-64,0
+super p,8,3,34,-12,0
+super k,8,3,63,-82,0
+ultra 1,12,6,34,-17,0
+ultra 2,10,4,63,-82,0

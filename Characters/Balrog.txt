@@ -1,0 +1,57 @@
+﻿cl lp,4,2,7,2,5
+cl mp,6,4,12,-2,4
+cl hp,5,5,16,-3,2
+cl lk,3,2,7,2,5
+cl mk,5,4,13,-3,0
+cl hk,7,2,13,3,7
+st lp,4,2,4,5,8
+st mp,7,2,16,-4,-1
+st hp,9,4,21,-7,-3
+st lk,4,2,10,-1,2
+st mk,9,3,12,-1,2
+st hk,8,2,20,-4,0
+cr lp,3,2,5,4,7
+cr mp,7,5,21,-8,-3
+cr hp,7,5,21,-8,-3
+cr lk,4,2,9,0,3
+cr mk,8,2,8,4,7
+cr hk,8,2,22,-6,0
+straight lp,4,7,17,-3,-1
+straight mp,7,6,19,-6,-1
+straight hp,7,6,20,-8,-1
+straight ex,7,6,17,-2,2
+upper lk,5,4,20,-3,-1
+upper mk,7,4,20,-5,1
+upper hk,7,4,21,-7,1
+upper ex,7,4,18,-1,4
+low straight lp,13,8,21,-8,0
+low straight mp,14,8,21,-10,0
+low straight hp,14,8,21,-11,0
+low straight ex,14,8,17,-3,0
+swing blow lp,22,5,21,-2,0
+swing blow mp,23,5,21,-6,2
+swing blow hp,23,5,21,-8,10
+swing blow ex,23,5,21,-5,10
+low smash lk,12,8,20,-5,0
+low smash mk,13,8,20,-7,0
+low smash hk,13,8,20,-9,0
+low smash ex,13,8,16,-3,0
+headbutt lp,8,11,32,-22,0
+headbutt mp,10,11,32,-22,0
+headbutt hp,12,11,32,-21,0
+headbutt ex,12,11,32,-21,0
+tap lvl 1,30,7,16,-4,0
+tap lvl 2,30,7,16,-4,0
+tap lvl 3,30,8,18,-17,-3
+tap lvl 4,30,9,21,-9,-5
+tap lvl 5,30,10,22,-14,-10
+tap lvl 6,30,11,24,-17,-13
+tap lvl 7,30,12,26,-20,-16
+tap lvl 8,30,13,29,-24,-20
+tap lvl 9,30,15,32,-29,-25
+tap final,30,16,36,-34,-30
+super p,10,27,31,-14,0
+super k,8,27,31,-14,0
+ultra 1 p,11,27,39,-26,0
+ultra 1 k,8,27,39,-26,0
+ultra 2,1,3,48,0,0
