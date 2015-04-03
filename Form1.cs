@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,10 +15,12 @@ namespace FramePunishV2
     {
         private static List<string> rosterNames = Character.fillRoster();
         private static List<Character> characters = Character.loadCharacters(rosterNames);
+        private static string appVersion = "1.0";
 
         public Form1()
         {
             InitializeComponent();
+            appInfoLabel.Text = "Version: " + appVersion;
             foreach (string name in rosterNames)
             {
                 fdComboBox.Items.Add(name);
@@ -88,13 +91,39 @@ namespace FramePunishV2
         }
 
         /// <summary>
-        /// Application info shown in message box
+        /// Close application
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void titleLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Created by Alvin Wang 2015");
-        }       
+            this.Close();
+        }
+
+        /// <summary>
+        /// Link to github repo
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void gitHubRepositoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo("https://github.com/alvinwkwang/framepunish-wfa");
+            Process.Start(sInfo);
+        }
+
+        /// <summary>
+        /// Opens 'about' message box for application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void aboutFramePunishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Frame Punish - Version " + appVersion + "\n\n" +
+                "Features:\n" +
+                "=========\n" +
+                "* View frame data\n" +
+                "* Calculate punishes on blocked moves\n\n" +
+                "Created by Alvin Wang");
+        }   
     }
 }

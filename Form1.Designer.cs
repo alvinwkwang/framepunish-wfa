@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.mainTextBox = new System.Windows.Forms.RichTextBox();
             this.fdButton = new System.Windows.Forms.Button();
             this.fdComboBox = new System.Windows.Forms.ComboBox();
@@ -40,7 +42,17 @@
             this.mpButton = new System.Windows.Forms.Button();
             this.mpBlockedComboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.titleLabel = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.appInfoLabel = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gitHubRepositoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutFramePunishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainTextBox
@@ -48,16 +60,16 @@
             this.mainTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.mainTextBox.Location = new System.Drawing.Point(288, 12);
+            this.mainTextBox.Location = new System.Drawing.Point(302, 27);
             this.mainTextBox.Name = "mainTextBox";
-            this.mainTextBox.Size = new System.Drawing.Size(338, 433);
+            this.mainTextBox.Size = new System.Drawing.Size(308, 449);
             this.mainTextBox.TabIndex = 0;
             this.mainTextBox.Text = "";
             // 
             // fdButton
             // 
             this.fdButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fdButton.Location = new System.Drawing.Point(73, 134);
+            this.fdButton.Location = new System.Drawing.Point(73, 152);
             this.fdButton.Name = "fdButton";
             this.fdButton.Size = new System.Drawing.Size(121, 43);
             this.fdButton.TabIndex = 2;
@@ -68,7 +80,7 @@
             // fdComboBox
             // 
             this.fdComboBox.FormattingEnabled = true;
-            this.fdComboBox.Location = new System.Drawing.Point(73, 98);
+            this.fdComboBox.Location = new System.Drawing.Point(73, 116);
             this.fdComboBox.Name = "fdComboBox";
             this.fdComboBox.Size = new System.Drawing.Size(121, 21);
             this.fdComboBox.TabIndex = 3;
@@ -77,7 +89,7 @@
             // 
             this.fdLabel.AutoSize = true;
             this.fdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fdLabel.Location = new System.Drawing.Point(69, 64);
+            this.fdLabel.Location = new System.Drawing.Point(69, 93);
             this.fdLabel.Name = "fdLabel";
             this.fdLabel.Size = new System.Drawing.Size(152, 20);
             this.fdLabel.TabIndex = 5;
@@ -156,26 +168,84 @@
             this.label3.TabIndex = 13;
             this.label3.Text = "Opponent\'s Blocked Move";
             // 
-            // titleLabel
+            // pictureBox1
             // 
-            this.titleLabel.AutoSize = true;
-            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.LinkColor = System.Drawing.Color.Black;
-            this.titleLabel.Location = new System.Drawing.Point(29, 12);
-            this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(229, 37);
-            this.titleLabel.TabIndex = 14;
-            this.titleLabel.TabStop = true;
-            this.titleLabel.Text = "Frame Punish";
-            this.titleLabel.VisitedLinkColor = System.Drawing.Color.Black;
-            this.titleLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.titleLabel_LinkClicked);
+            this.pictureBox1.Image = global::FramePunishV2.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(284, 50);
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            // 
+            // appInfoLabel
+            // 
+            this.appInfoLabel.AutoSize = true;
+            this.appInfoLabel.Location = new System.Drawing.Point(1, 473);
+            this.appInfoLabel.Name = "appInfoLabel";
+            this.appInfoLabel.Size = new System.Drawing.Size(0, 13);
+            this.appInfoLabel.TabIndex = 15;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.helpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(622, 24);
+            this.menuStrip1.TabIndex = 16;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.closeToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // closeToolStripMenuItem
+            // 
+            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.closeToolStripMenuItem.Text = "Close";
+            this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gitHubRepositoryToolStripMenuItem,
+            this.aboutFramePunishToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // gitHubRepositoryToolStripMenuItem
+            // 
+            this.gitHubRepositoryToolStripMenuItem.Name = "gitHubRepositoryToolStripMenuItem";
+            this.gitHubRepositoryToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.gitHubRepositoryToolStripMenuItem.Text = "GitHub Repository";
+            this.gitHubRepositoryToolStripMenuItem.Click += new System.EventHandler(this.gitHubRepositoryToolStripMenuItem_Click);
+            // 
+            // aboutFramePunishToolStripMenuItem
+            // 
+            this.aboutFramePunishToolStripMenuItem.Name = "aboutFramePunishToolStripMenuItem";
+            this.aboutFramePunishToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.aboutFramePunishToolStripMenuItem.Text = "About Frame Punish";
+            this.aboutFramePunishToolStripMenuItem.Click += new System.EventHandler(this.aboutFramePunishToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(638, 457);
-            this.Controls.Add(this.titleLabel);
+            this.ClientSize = new System.Drawing.Size(622, 488);
+            this.Controls.Add(this.appInfoLabel);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.mpBlockedComboBox);
             this.Controls.Add(this.mpButton);
@@ -188,8 +258,14 @@
             this.Controls.Add(this.fdComboBox);
             this.Controls.Add(this.fdButton);
             this.Controls.Add(this.mainTextBox);
+            this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Frame Punish";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,7 +285,15 @@
         private System.Windows.Forms.Button mpButton;
         private System.Windows.Forms.ComboBox mpBlockedComboBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.LinkLabel titleLabel;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label appInfoLabel;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gitHubRepositoryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutFramePunishToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
 
