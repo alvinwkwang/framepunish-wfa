@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FramePunishV2", "FramePunishV2.csproj", "{BFB5A347-E9CD-47D9-B825-CEB9BA13C99F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FramePunishWFA", "FramePunishWFA.csproj", "{BFB5A347-E9CD-47D9-B825-CEB9BA13C99F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
