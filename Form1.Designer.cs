@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.mainTextBox = new System.Windows.Forms.RichTextBox();
             this.fdButton = new System.Windows.Forms.Button();
             this.fdComboBox = new System.Windows.Forms.ComboBox();
             this.fdLabel = new System.Windows.Forms.Label();
@@ -51,27 +50,17 @@
             this.gitHubRepositoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutFramePunishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.mainTextBox = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // mainTextBox
-            // 
-            this.mainTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.mainTextBox.Location = new System.Drawing.Point(302, 27);
-            this.mainTextBox.Name = "mainTextBox";
-            this.mainTextBox.Size = new System.Drawing.Size(308, 449);
-            this.mainTextBox.TabIndex = 0;
-            this.mainTextBox.Text = "";
-            // 
             // fdButton
             // 
-            this.fdButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fdButton.Location = new System.Drawing.Point(73, 152);
+            this.fdButton.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fdButton.Location = new System.Drawing.Point(74, 152);
             this.fdButton.Name = "fdButton";
-            this.fdButton.Size = new System.Drawing.Size(121, 43);
+            this.fdButton.Size = new System.Drawing.Size(122, 43);
             this.fdButton.TabIndex = 2;
             this.fdButton.Text = "Get Frame Data";
             this.fdButton.UseVisualStyleBackColor = true;
@@ -79,8 +68,9 @@
             // 
             // fdComboBox
             // 
+            this.fdComboBox.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fdComboBox.FormattingEnabled = true;
-            this.fdComboBox.Location = new System.Drawing.Point(73, 116);
+            this.fdComboBox.Location = new System.Drawing.Point(74, 116);
             this.fdComboBox.Name = "fdComboBox";
             this.fdComboBox.Size = new System.Drawing.Size(121, 21);
             this.fdComboBox.TabIndex = 3;
@@ -88,25 +78,26 @@
             // fdLabel
             // 
             this.fdLabel.AutoSize = true;
-            this.fdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fdLabel.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fdLabel.Location = new System.Drawing.Point(69, 93);
             this.fdLabel.Name = "fdLabel";
-            this.fdLabel.Size = new System.Drawing.Size(152, 20);
+            this.fdLabel.Size = new System.Drawing.Size(153, 19);
             this.fdLabel.TabIndex = 5;
             this.fdLabel.Text = "View Frame Data:";
             // 
             // mpLabel
             // 
             this.mpLabel.AutoSize = true;
-            this.mpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mpLabel.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mpLabel.Location = new System.Drawing.Point(69, 246);
             this.mpLabel.Name = "mpLabel";
-            this.mpLabel.Size = new System.Drawing.Size(139, 20);
+            this.mpLabel.Size = new System.Drawing.Size(144, 19);
             this.mpLabel.TabIndex = 6;
             this.mpLabel.Text = "Move Punishing:";
             // 
             // mpUserComboBox
             // 
+            this.mpUserComboBox.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mpUserComboBox.FormattingEnabled = true;
             this.mpUserComboBox.Location = new System.Drawing.Point(12, 293);
             this.mpUserComboBox.Name = "mpUserComboBox";
@@ -115,8 +106,9 @@
             // 
             // mpOpponentComboBox
             // 
+            this.mpOpponentComboBox.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mpOpponentComboBox.FormattingEnabled = true;
-            this.mpOpponentComboBox.Location = new System.Drawing.Point(161, 293);
+            this.mpOpponentComboBox.Location = new System.Drawing.Point(160, 293);
             this.mpOpponentComboBox.Name = "mpOpponentComboBox";
             this.mpOpponentComboBox.Size = new System.Drawing.Size(121, 21);
             this.mpOpponentComboBox.TabIndex = 8;
@@ -125,27 +117,29 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(56, 277);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(26, 13);
+            this.label1.Size = new System.Drawing.Size(25, 13);
             this.label1.TabIndex = 9;
             this.label1.Text = "You";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(190, 277);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 13);
+            this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 10;
             this.label2.Text = "Opponent";
             // 
             // mpButton
             // 
-            this.mpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mpButton.Location = new System.Drawing.Point(73, 383);
+            this.mpButton.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mpButton.Location = new System.Drawing.Point(74, 383);
             this.mpButton.Name = "mpButton";
-            this.mpButton.Size = new System.Drawing.Size(121, 43);
+            this.mpButton.Size = new System.Drawing.Size(122, 43);
             this.mpButton.TabIndex = 11;
             this.mpButton.Text = "Get Punishes";
             this.mpButton.UseVisualStyleBackColor = true;
@@ -153,8 +147,9 @@
             // 
             // mpBlockedComboBox
             // 
+            this.mpBlockedComboBox.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mpBlockedComboBox.FormattingEnabled = true;
-            this.mpBlockedComboBox.Location = new System.Drawing.Point(161, 339);
+            this.mpBlockedComboBox.Location = new System.Drawing.Point(160, 339);
             this.mpBlockedComboBox.Name = "mpBlockedComboBox";
             this.mpBlockedComboBox.Size = new System.Drawing.Size(121, 21);
             this.mpBlockedComboBox.TabIndex = 12;
@@ -162,11 +157,12 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(153, 323);
+            this.label3.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(180, 323);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 13);
+            this.label3.Size = new System.Drawing.Size(79, 13);
             this.label3.TabIndex = 13;
-            this.label3.Text = "Opponent\'s Blocked Move";
+            this.label3.Text = "Blocked Move";
             // 
             // pictureBox1
             // 
@@ -179,11 +175,14 @@
             // 
             // appInfoLabel
             // 
+            this.appInfoLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.appInfoLabel.AutoSize = true;
-            this.appInfoLabel.Location = new System.Drawing.Point(1, 473);
+            this.appInfoLabel.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.appInfoLabel.Location = new System.Drawing.Point(2, 446);
             this.appInfoLabel.Name = "appInfoLabel";
-            this.appInfoLabel.Size = new System.Drawing.Size(0, 13);
+            this.appInfoLabel.Size = new System.Drawing.Size(73, 13);
             this.appInfoLabel.TabIndex = 15;
+            this.appInfoLabel.Text = "app version";
             // 
             // menuStrip1
             // 
@@ -192,7 +191,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(622, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(690, 24);
             this.menuStrip1.TabIndex = 16;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -207,7 +206,7 @@
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.closeToolStripMenuItem.Text = "Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
@@ -239,11 +238,23 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // mainTextBox
+            // 
+            this.mainTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.mainTextBox.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainTextBox.Location = new System.Drawing.Point(302, 27);
+            this.mainTextBox.Name = "mainTextBox";
+            this.mainTextBox.Size = new System.Drawing.Size(376, 422);
+            this.mainTextBox.TabIndex = 0;
+            this.mainTextBox.Text = "";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(622, 488);
+            this.ClientSize = new System.Drawing.Size(690, 461);
             this.Controls.Add(this.appInfoLabel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
@@ -273,7 +284,6 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox mainTextBox;
         private System.Windows.Forms.Button fdButton;
         private System.Windows.Forms.ComboBox fdComboBox;
         private System.Windows.Forms.Label fdLabel;
@@ -294,6 +304,7 @@
         private System.Windows.Forms.ToolStripMenuItem gitHubRepositoryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutFramePunishToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.RichTextBox mainTextBox;
     }
 }
 

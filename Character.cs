@@ -41,20 +41,19 @@ namespace FramePunishV2
         /// </summary>
         /// <param name="ch"></param>
         /// <returns></returns>
-        public static List<String> displayData(Character ch)
+        public static List<String> getFrameData(Character ch)
         {
             List<string> data = new List<string>();
 
-            string header = String.Format("{0,-20}{1,-10}{2,-10}{3,-10}{4,-10}{5,-10}",
-                                          "Name", "Startup", "Active", "Recovery", "On Block", "On Hit");
-            data.Add(ch.name + "'s Frame Data");
+            string header = String.Format("{0,-18}{1,6}{2,6}{3,6}{4,6}{5,6}",
+                                          "Name", "S", "A", "R", "OB", "OH");
             data.Add(header);
-            data.Add("====================================================");
+            data.Add("=================================================");
 
             String output;
             foreach (Move move in ch.moves)
             {
-                output = String.Format("{0,-20}{1,-10}{2,-10}{3,-10}{4,-10}{5,-10}",
+                output = String.Format("{0,-18}{1,6}{2,6}{3,6}{4,6}{5,6}",
                     move.moveName, move.startup, move.active, move.recovery, move.onBlock, move.onHit);
                 data.Add(output);
 

@@ -48,7 +48,7 @@ namespace FramePunishV2
         {
             mainTextBox.Clear();
             Character selected = characters[fdComboBox.SelectedIndex];
-            List<string> frameData = Character.displayData(selected);
+            List<string> frameData = Character.getFrameData(selected);
 
             foreach (string data in frameData)
             {
