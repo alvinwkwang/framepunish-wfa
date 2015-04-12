@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -174,6 +175,18 @@ namespace FramePunishV2
                 new Tuple<string, int>(possibleMove.moveName,
                     (Int32.Parse(blocked.onBlock) + (Int32.Parse(possibleMove.startup) - 1)));
             return temp;
+        }
+
+        /// <summary>
+        /// return image of character
+        /// </summary>
+        /// <param name="ch"></param>
+        /// <returns></returns>
+        public static Image getPortrait(string ch)
+        {
+            string path = String.Format("Assets/CharPortraits/{0}.png", ch);
+            Image image = Image.FromFile(path);
+            return image;
         }
     }
 }

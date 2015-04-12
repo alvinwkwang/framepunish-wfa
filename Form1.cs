@@ -15,7 +15,7 @@ namespace FramePunishV2
     {
         private static List<string> rosterNames = Character.fillRoster();
         private static List<Character> characters = Character.loadCharacters(rosterNames);
-        private static string appVersion = "1.0";
+        private static string appVersion = "1.1";
 
         public Form1()
         {
@@ -30,6 +30,8 @@ namespace FramePunishV2
             fdComboBox.SelectedIndex = 0;
             mpUserComboBox.SelectedIndex = 0;
             mpOpponentComboBox.SelectedIndex = 0;
+            userPortrait.Image = Character.getPortrait(rosterNames[mpUserComboBox.SelectedIndex]);
+            opponentPortrait.Image = Character.getPortrait(rosterNames[mpOpponentComboBox.SelectedIndex]);
 
             foreach (Move move in characters[mpOpponentComboBox.SelectedIndex].moves)
             {
@@ -57,6 +59,16 @@ namespace FramePunishV2
         }
 
         /// <summary>
+        /// Change user character portrait
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void mpUserComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            userPortrait.Image = Character.getPortrait(rosterNames[mpUserComboBox.SelectedIndex]);
+        }   
+
+        /// <summary>
         /// update the opponent's move list when different opponent is selected
         /// </summary>
         /// <param name="sender"></param>
@@ -69,6 +81,7 @@ namespace FramePunishV2
                 mpBlockedComboBox.Items.Add(move.moveName);
             }
             mpBlockedComboBox.SelectedIndex = 0;
+            opponentPortrait.Image = Character.getPortrait(rosterNames[mpOpponentComboBox.SelectedIndex]);
         }
 
         /// <summary>
@@ -124,6 +137,6 @@ namespace FramePunishV2
                 "* View frame data\n" +
                 "* Calculate punishes on blocked moves\n\n" +
                 "Created by Alvin Wang");
-        }   
+        }
     }
 }
